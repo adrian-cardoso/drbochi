@@ -1,4 +1,4 @@
-import { Shield, CreditCard, Video } from "lucide-react";
+import { DollarSign, CreditCard, Video } from "lucide-react";
 
 export default function Insurance() {
   return (
@@ -9,19 +9,20 @@ export default function Insurance() {
             Practical Information
           </p>
           <h2 className="font-heading text-3xl font-bold text-text md:text-4xl">
-            Insurance & Payment
+            Payment & Access
           </h2>
         </div>
 
         <div className="mx-auto grid max-w-4xl gap-8 md:grid-cols-3">
           <div className="rounded-2xl border border-cream-dark bg-cream/50 p-8 text-center transition-all hover:border-primary/30 hover:shadow-lg">
-            <Shield className="mx-auto mb-4 h-8 w-8 text-primary" />
+            <DollarSign className="mx-auto mb-4 h-8 w-8 text-primary" />
             <h3 className="mb-3 font-heading text-lg font-semibold text-text">
-              Insurance Accepted
+              Transparent Pricing
             </h3>
             <p className="text-sm leading-relaxed text-text/70">
-              We accept select insurance plans. Contact our office to verify
-              your specific coverage before your first visit.
+              We are a private-pay practice and do not accept insurance.
+              Clear, upfront pricing with no surprise bills so you can plan
+              with confidence.
             </p>
           </div>
 

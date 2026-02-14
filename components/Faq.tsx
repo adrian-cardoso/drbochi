@@ -22,7 +22,7 @@ const faqs = [
   {
     question: "Do you accept insurance?",
     answer:
-      "We accept select insurance plans and also offer flexible payment options. We recommend contacting our office to verify your specific coverage. Many patients find that investing in naturopathic care reduces their overall healthcare costs long-term.",
+      "We are a private-pay practice and do not accept insurance. We offer flexible payment options including HSA/FSA cards, credit cards, and payment plans. Many patients find that investing in naturopathic care reduces their overall healthcare costs long-term.",
   },
   {
     question: "Can naturopathic medicine work alongside conventional treatments?",
