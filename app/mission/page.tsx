@@ -97,7 +97,7 @@ export default function MissionPage() {
                   <Award className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
                   <div>
                     <p className="font-medium text-text">
-                      M.S. Acupuncture
+                      Master of Science in Acupuncture
                     </p>
                     <p className="text-sm text-text/60">
                       University of Bridgeport Acupuncture Institute
@@ -119,7 +119,7 @@ export default function MissionPage() {
                   <Award className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
                   <div>
                     <p className="font-medium text-text">
-                      B.S. Biology
+                      Bachelor of Science in Biology
                     </p>
                     <p className="text-sm text-text/60">
                       Pace University — Westchester, New York
