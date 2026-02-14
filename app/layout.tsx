@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
+import StickyBooking from "@/components/StickyBooking";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -61,6 +62,7 @@ export default function RootLayout({
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />
+          <StickyBooking />
         </Providers>
         <Analytics />
       </body>

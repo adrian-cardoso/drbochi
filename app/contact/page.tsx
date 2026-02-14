@@ -122,16 +122,23 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Office image */}
+      {/* Map */}
       <section className="bg-cream/30 py-16">
         <div className="mx-auto max-w-5xl px-6">
+          <h2 className="mb-6 text-center font-heading text-2xl font-bold text-text">
+            Find Us
+          </h2>
           <div className="overflow-hidden rounded-2xl shadow-lg">
-            <Image
-              src="https://images.unsplash.com/photo-1603778170854-72a4f6293d32?auto=format&fit=crop&w=1200&q=80"
-              alt="Serene windowsill with plants and calming objects"
-              width={1200}
-              height={500}
-              className="h-64 w-full object-cover md:h-80"
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48272.28417441298!2d-73.23507!3d41.18655!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e80e39c7a8e4c5%3A0x4a4f02ecbca40a74!2sBridgeport%2C%20CT!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
+              width="100%"
+              height="400"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Office location in Bridgeport, Connecticut"
+              className="h-64 w-full md:h-96"
             />
           </div>
         </div>

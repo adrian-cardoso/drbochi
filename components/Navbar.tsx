@@ -26,6 +26,9 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <div className="hidden items-center gap-8 md:flex">
+          <span className="rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
+            Hablamos Español
+          </span>
           {links.map((link) => (
             <Link
               key={link.href}
@@ -61,6 +64,9 @@ export default function Navbar() {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="border-t border-cream-dark bg-white px-6 pb-6 md:hidden">
+          <span className="mt-3 inline-block rounded-full bg-accent/10 px-3 py-1 text-xs font-semibold text-accent">
+            Hablamos Español
+          </span>
           {links.map((link) => (
             <Link
               key={link.href}

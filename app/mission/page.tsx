@@ -154,6 +154,53 @@ export default function MissionPage() {
         </div>
       </section>
 
+      {/* Personal Story */}
+      <section className="py-20">
+        <div className="mx-auto max-w-7xl px-6">
+          <div className="mx-auto max-w-3xl">
+            <div className="mb-8 text-center">
+              <p className="mb-2 text-sm font-semibold uppercase tracking-widest text-secondary">
+                My Story
+              </p>
+              <h2 className="font-heading text-3xl font-bold text-text md:text-4xl">
+                Why Naturopathic Medicine?
+              </h2>
+            </div>
+            <div className="rounded-2xl border border-cream-dark bg-white p-8 md:p-12">
+              <div className="space-y-4 text-text/70 leading-relaxed">
+                <p>
+                  My journey into naturopathic medicine began with a deeply
+                  personal experience. Growing up, I watched family members
+                  struggle with chronic health conditions that conventional
+                  medicine could manage but never fully resolve. I saw the
+                  frustration of being told everything was &ldquo;normal&rdquo;
+                  while they still felt unwell.
+                </p>
+                <p>
+                  That experience ignited a passion in me to find a different
+                  approach — one that looks beyond surface-level symptoms to
+                  understand the whole person. When I discovered naturopathic
+                  medicine, I knew I had found my calling: a system of healing
+                  that honors both the art and science of medicine.
+                </p>
+                <p>
+                  As a former collegiate athlete, I also understand firsthand how
+                  deeply connected our physical health is to our mental and
+                  emotional well-being. That perspective shapes every treatment
+                  plan I create — because true healing requires caring for the
+                  whole person, not just a diagnosis.
+                </p>
+                <p className="font-medium text-text">
+                  Today, nothing fulfills me more than watching my patients
+                  reclaim their health and rediscover what it feels like to
+                  truly thrive.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Philosophy */}
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-6">
