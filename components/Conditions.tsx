@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { CheckCircle } from "lucide-react";
 
 const conditions = [
@@ -28,16 +29,30 @@ export default function Conditions() {
           </p>
         </div>
 
-        <div className="mx-auto grid max-w-4xl gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {conditions.map((condition) => (
-            <div
-              key={condition}
-              className="flex items-center gap-3 rounded-xl border border-cream-dark bg-white p-4 transition-colors hover:border-secondary/40"
-            >
-              <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
-              <span className="text-sm font-medium text-text">{condition}</span>
-            </div>
-          ))}
+        <div className="mx-auto grid max-w-5xl items-center gap-12 lg:grid-cols-2">
+          <div className="grid gap-4 sm:grid-cols-2">
+            {conditions.map((condition) => (
+              <div
+                key={condition}
+                className="flex items-center gap-3 rounded-xl border border-cream-dark bg-white p-4 transition-colors hover:border-secondary/40"
+              >
+                <CheckCircle className="h-5 w-5 shrink-0 text-secondary" />
+                <span className="text-sm font-medium text-text">
+                  {condition}
+                </span>
+              </div>
+            ))}
+          </div>
+
+          <div className="overflow-hidden rounded-2xl shadow-lg">
+            <Image
+              src="https://images.unsplash.com/photo-1523955845527-baa107a45dd6?auto=format&fit=crop&w=600&q=80"
+              alt="Natural botanical ingredients in ceramic bowls"
+              width={600}
+              height={500}
+              className="h-auto w-full object-cover"
+            />
+          </div>
         </div>
       </div>
     </section>

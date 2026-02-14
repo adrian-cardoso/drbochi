@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 import ContactForm from "@/components/ContactForm";
 
@@ -117,6 +118,21 @@ export default function ContactPage() {
                 </a>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Office image */}
+      <section className="bg-cream/30 py-16">
+        <div className="mx-auto max-w-5xl px-6">
+          <div className="overflow-hidden rounded-2xl shadow-lg">
+            <Image
+              src="https://images.unsplash.com/photo-1603778170854-72a4f6293d32?auto=format&fit=crop&w=1200&q=80"
+              alt="Serene windowsill with plants and calming objects"
+              width={1200}
+              height={500}
+              className="h-64 w-full object-cover md:h-80"
+            />
           </div>
         </div>
       </section>

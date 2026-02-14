@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { GraduationCap, Heart, Leaf, Award } from "lucide-react";
 
 export const metadata = {
@@ -31,29 +32,43 @@ export default function MissionPage() {
       <section className="bg-white py-20">
         <div className="mx-auto max-w-7xl px-6">
           <div className="mx-auto grid max-w-5xl gap-12 lg:grid-cols-2 lg:items-center">
+            <div className="mx-auto max-w-sm">
+              <div className="overflow-hidden rounded-2xl shadow-lg">
+                <Image
+                  src="/dr-bochi.webp"
+                  alt="Dr. Alena Bochi, ND"
+                  width={400}
+                  height={568}
+                  className="h-auto w-full object-cover"
+                  unoptimized
+                />
+              </div>
+            </div>
+
             <div>
               <h2 className="mb-6 font-heading text-3xl font-bold text-text">
                 Dr. Alena Bochi, ND
               </h2>
               <div className="space-y-4 text-text/70">
                 <p>
-                  Dr. Alena Bochi is a licensed naturopathic doctor who is
-                  passionate about helping patients uncover the root causes of
-                  their health concerns. She believes that true healing goes
-                  beyond managing symptoms — it requires understanding the whole
-                  person.
+                  Dr. Alena Bochi is a licensed Naturopathic Physician practicing
+                  in Connecticut. She earned her Bachelor of Science in Biology
+                  from Pace University in Westchester, New York, on a full
+                  athletic scholarship for tennis, and went on to complete her
+                  medical training at the University of Bridgeport College of
+                  Naturopathic Medicine.
                 </p>
                 <p>
-                  With a foundation in both modern science and traditional
-                  healing arts, Dr. Bochi integrates functional lab testing,
-                  botanical medicine, acupuncture, nutritional counseling, and
-                  lifestyle guidance into comprehensive, individualized treatment
-                  plans.
+                  Dr. Bochi holds a Master of Science from the University of
+                  Bridgeport Acupuncture Institute and is currently advancing her
+                  expertise through a Doctorate in Chinese Medicine.
                 </p>
                 <p>
-                  Her approach is collaborative — she works alongside her
-                  patients as a partner in their health journey, empowering them
-                  with the knowledge and tools they need to thrive.
+                  During her clinical training, she had the opportunity to study
+                  under Dr. Peter J. D&#39;Adamo, a world-renowned Naturopathic
+                  Physician and author, gaining specialized knowledge in
+                  Generative Medicine, the Blood Type and GenoType Diets,
+                  Nutrigenomics, and Microbiome analysis.
                 </p>
               </div>
             </div>
@@ -82,10 +97,10 @@ export default function MissionPage() {
                   <Award className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
                   <div>
                     <p className="font-medium text-text">
-                      Licensed Naturopathic Doctor
+                      M.S. Acupuncture
                     </p>
                     <p className="text-sm text-text/60">
-                      State licensed and board certified
+                      University of Bridgeport Acupuncture Institute
                     </p>
                   </div>
                 </li>
@@ -93,10 +108,43 @@ export default function MissionPage() {
                   <Award className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
                   <div>
                     <p className="font-medium text-text">
-                      Certified Acupuncturist
+                      Doctorate in Chinese Medicine
                     </p>
                     <p className="text-sm text-text/60">
-                      Trained in traditional acupuncture techniques
+                      Currently pursuing
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Award className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+                  <div>
+                    <p className="font-medium text-text">
+                      B.S. Biology
+                    </p>
+                    <p className="text-sm text-text/60">
+                      Pace University — Westchester, New York
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Award className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+                  <div>
+                    <p className="font-medium text-text">
+                      Licensed Naturopathic Physician
+                    </p>
+                    <p className="text-sm text-text/60">
+                      State of Connecticut
+                    </p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <Award className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+                  <div>
+                    <p className="font-medium text-text">
+                      NASM Personal Training Certification
+                    </p>
+                    <p className="text-sm text-text/60">
+                      National Academy of Sports Medicine
                     </p>
                   </div>
                 </li>
