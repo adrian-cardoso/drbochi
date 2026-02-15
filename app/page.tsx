@@ -7,7 +7,6 @@ import FirstVisit from "@/components/FirstVisit";
 import Testimonials from "@/components/Testimonials";
 import Insurance from "@/components/Insurance";
 import Faq from "@/components/Faq";
-import Principles from "@/components/Principles";
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
       <Testimonials />
       <Insurance />
       <Faq />
-      <Principles />
     </>
   );
 }
