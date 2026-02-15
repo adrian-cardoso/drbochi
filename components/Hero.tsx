@@ -1,22 +1,33 @@
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-to-br from-cream via-white to-cream">
-      <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
-        <div className="grid items-center gap-12 lg:grid-cols-2">
-          {/* Text */}
-          <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-secondary">
+    <section className="relative min-h-[70vh] overflow-hidden md:min-h-[80vh]">
+      {/* Background image with Ken Burns animation */}
+      <div
+        className="absolute inset-0 animate-ken-burns bg-cover bg-center"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1499002238440-d264edd596ec?auto=format&fit=crop&w=1920&q=80')",
+        }}
+      />
+
+      {/* Dark overlay for text readability */}
+      <div className="absolute inset-0 bg-black/40" />
+
+      {/* Content */}
+      <div className="relative z-10 flex min-h-[70vh] items-center md:min-h-[80vh]">
+        <div className="mx-auto max-w-7xl px-6 py-24 md:py-32">
+          <div className="max-w-2xl">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-widest text-white/80">
               Naturopathic Medicine
             </p>
-            <h1 className="font-heading text-4xl font-bold leading-tight text-text md:text-6xl">
+            <h1 className="font-heading text-4xl font-bold leading-tight text-white md:text-6xl">
               Whole-Person Care,{" "}
-              <span className="text-primary">Rooted in Nature</span>
+              <span className="text-accent">Rooted in Nature</span>
             </h1>
-            <p className="mt-6 text-lg leading-relaxed text-text/70 md:text-xl">
+            <p className="mt-6 text-lg leading-relaxed text-white/80 md:text-xl">
               Dr. Alena Bochi, ND combines evidence-based natural therapies with
               modern diagnostics to uncover the root cause of illness and restore
               lasting health.
@@ -31,34 +42,14 @@ export default function Hero() {
               </Link>
               <Link
                 href="/mission"
-                className="inline-flex items-center gap-2 rounded-full border-2 border-primary px-8 py-3 text-base font-semibold text-primary transition-colors hover:bg-primary hover:text-white"
+                className="inline-flex items-center gap-2 rounded-full border-2 border-white/60 px-8 py-3 text-base font-semibold text-white transition-colors hover:border-white hover:bg-white/10"
               >
                 Our Mission
               </Link>
             </div>
           </div>
-
-          {/* Image */}
-          <div className="relative">
-            <div className="overflow-hidden rounded-2xl shadow-2xl">
-              <Image
-                src="https://images.unsplash.com/photo-1566792505656-e82d93abac30?auto=format&fit=crop&w=800&q=80"
-                alt="Dried medicinal herbs on rustic wood surface"
-                width={800}
-                height={600}
-                className="h-auto w-full object-cover"
-                priority
-              />
-            </div>
-            {/* Decorative ring behind image */}
-            <div className="absolute -bottom-6 -right-6 -z-10 h-full w-full rounded-2xl border-2 border-secondary/20" />
-          </div>
         </div>
       </div>
-
-      {/* Decorative elements */}
-      <div className="absolute -top-24 -right-24 h-96 w-96 rounded-full bg-secondary/5" />
-      <div className="absolute -bottom-16 -left-16 h-64 w-64 rounded-full bg-accent/10" />
     </section>
   );
 }
