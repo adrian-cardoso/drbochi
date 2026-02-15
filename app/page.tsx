@@ -5,7 +5,6 @@ import CtaBanner from "@/components/CtaBanner";
 import Conditions from "@/components/Conditions";
 import FirstVisit from "@/components/FirstVisit";
 import Testimonials from "@/components/Testimonials";
-import Insurance from "@/components/Insurance";
 import Faq from "@/components/Faq";
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <Conditions />
       <FirstVisit />
       <Testimonials />
-      <Insurance />
       <Faq />
     </>
   );
